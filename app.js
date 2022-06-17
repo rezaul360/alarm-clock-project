@@ -57,6 +57,7 @@ function setAlarm() {
     ringtone.pause(); // pause the ringtone
     content.classList.remove("disable");
     setAlarmBtn.innerText = "Set Alarm";
+    setAlarmBtn.style.color = "#fff";
     return (isAlarmSet = false); // return isAlarmSet value of false
   }
   //getting hour, minute, second select tag value
@@ -72,6 +73,7 @@ function setAlarm() {
   alarmTime = time;
   content.classList.add("disable");
   setAlarmBtn.innerText = "Clear Alarm";
+  setAlarmBtn.style.color = "red";
 }
 
 setAlarmBtn.addEventListener("click", setAlarm);
